@@ -93,7 +93,7 @@ function Finalize() {
     <>
       <section>
         <h1>
-          <span className="text-primary">Wohooo!</span> Let's finalize your{" "}
+          <span className="text-primary">Wohooo!</span> Let&apos;s finalize your{" "}
           <span className="text-primary">readme</span>
         </h1>
       </section>

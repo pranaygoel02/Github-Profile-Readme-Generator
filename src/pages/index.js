@@ -15,7 +15,7 @@ import {
 } from "../../redux/auth/githubUserSlice";
 import { resetReadmeSlice } from "../../redux/readmeSlice";
 
-function index({ session }) {
+function Index({ session }) {
   const { githubUserId } = useGithubSession();
 
   const dispatch = useDispatch();
@@ -80,6 +80,7 @@ function index({ session }) {
         </Link>
       )}
       <Image
+        quality={100}
         className="rounded-lg outline-neutral-800 outline-1 outline w-full h-full drop-shadow-[0_0_80px_rgba(34,197,94,0.4)]"
         src={Landing_bg}
       />
@@ -105,4 +106,4 @@ export async function getServerSideProps(context) {
     },
   };
 }
-export default index;
+export default Index;

@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addSocial, removeSocial, setBagdeStyle } from "../../../redux/readmeSlice";
 import Select from "../TechSelect/Select";
+import Image from "next/image";
 
 function Step4() {
   const dispatch = useDispatch();
@@ -56,8 +57,8 @@ function Step4() {
       <div className="w-full space-y-4">
       {socials?.map((item, index) => {
         return (
-            <div className="w-full flex items-center justify-between gap-4">
-                <a target="_blank" href={item?.link}><img src={`https://img.shields.io/badge/${item?.social}-${item?.color.replace('#','')}?style=${badgeStyle}&logo=${item?.social}`}/></a>
+            <div key={item?.social} className="w-full flex items-center justify-between gap-4">
+                <a target="_blank" href={item?.link}><img alt={`${item.social} Badge`} src={`https://img.shields.io/badge/${item?.social}-${item?.color.replace('#','')}?style=${badgeStyle}&logo=${item?.social}`}/></a>
                 <p className="p-2  outline-1 outline-dashed rounded-md w-full outline-neutral-600 text-neutral-500 font-mono">{item?.username}</p>
                 <button className="btn btn-primary rounded-l-none" onClick={() => dispatch(removeSocial({social: item?.social}))}>Remove</button>
             </div>

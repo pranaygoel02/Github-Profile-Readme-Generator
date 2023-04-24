@@ -119,6 +119,7 @@ import {
 } from "../../../redux/readmeSlice";
 import numberToWords from "@/utils/convertToWords";
 import {AiOutlineInfoCircle} from 'react-icons/ai'
+import Image from "next/image";
 
 function Step1() {
   const dispatch = useDispatch();
@@ -176,8 +177,9 @@ function Step1() {
       <div className="w-full lg:gap-4 grid lg:grid-cols-2">
         {selectedTechs?.map((item, index) => {
           return (
-            <p className=" w-full flex items-center justify-between gap-4 p-2  outline-1 outline-dashed rounded-md outline-neutral-600 text-neutral-500 font-mono">
+            <p key={index} className=" w-full flex items-center justify-between gap-4 p-2  outline-1 outline-dashed rounded-md outline-neutral-600 text-neutral-500 font-mono">
               <img
+                alt={`${item?.name} badge`}
                 src={`https://img.shields.io/badge/${item?.name
                   ?.split(" ")
                   .join("%20")}-${item?.color.replace(
@@ -186,6 +188,7 @@ function Step1() {
                 )}?style=${skillsBadgeStyle}&logo=${item?.name
                   ?.split(" ")
                   .join("%20")}`}
+                className="w-auto h-auto"
               />
               {item?.name}
               <button

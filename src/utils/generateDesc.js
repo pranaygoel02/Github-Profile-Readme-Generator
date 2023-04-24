@@ -27,7 +27,7 @@ function generateprompt({ selectedTechs, userInfo, login }) {
     ", "
   )} as tech stack keywords. Some more information about the user are as follows: ${userInfo?.join(
     ", "
-  )} Highlight their expertise in specific technologies, passion for specific field/industry, and notable contributions to relevant domain/field. Mention their collaborative nature, quick learning ability, and excitement for taking up new challenges in bullet points as a Markdown formatted string.`;
+  )} Highlight their expertise in specific technologies, passion for specific field/industry, and notable contributions to relevant domain/field. Mention their collaborative nature, quick learning ability, and excitement for taking up new challenges in bullet points as a Markdown formatted string. Just provide a brief description of the user in first person. Do not add any projects listing, unless given in keywords.`;
   console.log(prompt);
   return `${prompt}`;
 }

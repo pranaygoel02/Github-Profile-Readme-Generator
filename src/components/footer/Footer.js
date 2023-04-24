@@ -11,7 +11,7 @@ function Footer() {
         <div className="font-mono">
           <p className="inline-flex gap-2 items-center">
             Using{" "}
-            <Image src={OpenAI} className="w-24 invert" alt="Using OpenAI"/>
+            <Image src={OpenAI} className="w-24 invert" width={100} height={100} alt="Using OpenAI"/>
           </p>
         </div>
       </div>

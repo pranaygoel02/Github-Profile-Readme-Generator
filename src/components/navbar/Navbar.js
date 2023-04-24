@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useGithubSession } from "../../utils/authHandler";
 import { useSelector } from "react-redux";
+import Image from "next/image";
 
 function Navbar() {
   const { session, status, githubUserId } = useGithubSession();
@@ -33,7 +34,7 @@ function Navbar() {
               passHref
               href={`${html_url}`}
             >
-              <img className="rounded-full w-10" src={avatar_url} />
+              <Image width={100} height={100} alt={'Avatar'} className="rounded-full w-10" src={avatar_url} />
             </Link>
           </>
         )}

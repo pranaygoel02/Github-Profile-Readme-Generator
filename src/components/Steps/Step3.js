@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import generateDesc from "@/utils/generateDesc";
 import {
@@ -6,7 +5,6 @@ import {
   fetchDesc,
   setError,
 } from "../../../redux/readmeSlice";
-import SkipToStep from "./SkipToStep";
 import { toast } from "react-hot-toast";
 
 function Step3() {
@@ -47,22 +45,22 @@ function Step3() {
         <p className="text-neutral-300">Keywords: </p>
         <span className="chip">{login}</span>
         {userInfo?.map((item) => (
-          <span className="chip">{item}</span>
+          <span key={item} className="chip">{item}</span>
         ))}
         {selectedTechs?.map((item) => (
-          <span className="chip">{item?.name}</span>
+          <span key={item} className="chip">{item?.name}</span>
         ))}
       </div>
       {fetchingDesc && 
       <div className="relative w-full">
       <div className="w-full absolute h-full flex items-center justify-center gap-2">
         {Array.from({length:60}).fill(0).map((_, id) => (
-        <span className="w-2 h-2 flex rounded-full bg-primary animate-jump" style={{animationDelay: `${100 * id}ms`}}></span>
+        <span key={id} className="w-2 h-2 flex rounded-full bg-primary animate-jump" style={{animationDelay: `${100 * id}ms`}}></span>
         ))}
       </div>
       <div className="w-full absolute h-full flex items-center justify-center gap-2">
         {Array.from({length:60}).fill(0).map((_, id) => (
-        <span className="w-2 h-2 flex rounded-full bg-primary animate-jump-rev" style={{animationDelay: `${100 * id}ms`}}></span>
+        <span key={id} className="w-2 h-2 flex rounded-full bg-primary animate-jump-rev" style={{animationDelay: `${100 * id}ms`}}></span>
         ))}
       </div>
       </div>
