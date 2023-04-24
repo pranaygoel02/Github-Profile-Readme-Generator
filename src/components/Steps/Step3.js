@@ -25,7 +25,7 @@ function Step3() {
     }
     dispatch(fetchDesc());
     const data = await generateDesc({ selectedTechs: selectedTechs?.map(item => item?.name), userInfo, login });
-    console.log(data);
+    // console.log(data);
     if (data)
       dispatch(
         setUserDescription({

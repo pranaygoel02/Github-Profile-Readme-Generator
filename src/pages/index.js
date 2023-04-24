@@ -33,10 +33,10 @@ function Index({ session }) {
   // },[githubUserProfile])
 
   useEffect(() => {
-    console.log('Use Effect >>>> GitHub User Id >>>> ', githubUserId);
-    console.log('Get GitHub User Profile >>>>>>> ', githubUserProfile);
+    // console.log('Use Effect >>>> GitHub User Id >>>> ', githubUserId);
+    // console.log('Get GitHub User Profile >>>>>>> ', githubUserProfile);
     if (session !== null) {
-      console.log('Git Profile >>>>>>> ', githubProfile);
+      // console.log('Git Profile >>>>>>> ', githubProfile);
       if (githubProfile !== undefined && githubProfile !== null) {
         dispatch(setGithubUserProfile({ githubUserProfile: githubProfile }));
       } else if (
@@ -44,12 +44,12 @@ function Index({ session }) {
         Object.keys(githubUserProfile).length === 0
       ) {
         const data = dispatch(getGithubUserProfile({ githubUserId }));
-        console.log('Data >>>>>>> ', data);
+        // console.log('Data >>>>>>> ', data);
         // dispatch(setGithubUserProfile({ githubUserProfile: JSON.parse(localStorage.getItem('githubUserProfile')) }));
       }
     }
     else {
-      console.log('Reset GitHub User Profile >>>>>>> ');
+      // console.log('Reset GitHub User Profile >>>>>>> ');
       dispatch(resetGithubUserProfile());
       dispatch(resetReadmeSlice());
     }
@@ -90,7 +90,7 @@ function Index({ session }) {
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
-  console.log(session);
+  // console.log(session);
 
   if (!session) {
     return {

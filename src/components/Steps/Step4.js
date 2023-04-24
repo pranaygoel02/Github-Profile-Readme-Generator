@@ -18,7 +18,7 @@ function Step4() {
         dispatch(addSocial({ social, username, link, color }));
     }
 
-    console.log(socials);
+    // console.log(socials);
 
   return (
     <section>

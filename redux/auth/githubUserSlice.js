@@ -12,9 +12,9 @@ export const githubUserSlice = createSlice({
         const { githubUserId } = action.payload;
         const response = await fetch(`https://api.github.com/user/${githubUserId}`);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         state.githubUserProfile = data;
-        console.log('State >>> ', state.githubUserProfile);
+        // console.log('State >>> ', state.githubUserProfile);
         localStorage.setItem("githubUserProfile", JSON.stringify(data));
     },
     setGithubUserId: (state, action) => {

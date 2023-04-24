@@ -62,7 +62,7 @@
 //       }
 //     }, [search]);
 
-//     console.log(searchList);
+//     // console.log(searchList);
 //     return (
 //       <section>
 //         <h1>
@@ -84,7 +84,7 @@
 //         </form>
 //         <div>
 //           {Object.keys(searchList).map((key) => {
-//             console.log(searchList[key]);
+//             // console.log(searchList[key]);
 //             return (
 //               searchList[key]?.length > 0 && (
 //                 <div className="py-8">
@@ -135,7 +135,7 @@ function Step1() {
     dispatch(addTech({ name, color }));
   };
 
-  console.log(selectedTechs);
+  // console.log(selectedTechs);
 
   return (
     <section>

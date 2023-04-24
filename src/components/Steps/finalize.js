@@ -23,16 +23,16 @@ function Finalize() {
     badgeStyle,
   } = useSelector((state) => state.readme);
 
-  console.log({
-    login,
-    selectedTechs,
-    userDescription,
-    socials,
-    cardsToShow,
-    cardTheme,
-    skillsBadgeStyle,
-    badgeStyle,
-  });
+  // console.log({
+  //   login,
+  //   selectedTechs,
+  //   userDescription,
+  //   socials,
+  //   cardsToShow,
+  //   cardTheme,
+  //   skillsBadgeStyle,
+  //   badgeStyle,
+  // });
 
   function DownloadMd (content) {
     const blob = new Blob([content], { type: "text/markdown" });
@@ -87,7 +87,7 @@ function Finalize() {
     setFinalReadme(`${userDescription}\n${techs}\n${socialLinks}\n${gitCards}`);
   }, [userDescription, techs, socialLinks, gitCards]);
 
-  console.log(finalReadme);
+  // console.log(finalReadme);
 
   return (
     <>

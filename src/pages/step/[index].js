@@ -12,13 +12,13 @@ function Index({ session }) {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    console.log("GITHUB USER PROFILE IN USE EFFECT >>> ", githubUserProfile);
+    // console.log("GITHUB USER PROFILE IN USE EFFECT >>> ", githubUserProfile);
     if(Object.keys(JSON.parse(localStorage.getItem("githubUserProfile"))).length === 0 || (githubUserProfile !== null && githubUserProfile !== undefined && Object.keys(githubUserProfile)?.length === 0)) {
       router.replace("/");
     }
   }, [index,githubUserProfile]);
 
-  console.log("Github User Profile IN STEP >>> ", githubUserProfile);
+  // console.log("Github User Profile IN STEP >>> ", githubUserProfile);
 
   // useEffect(() => {
   // dispatch
