@@ -1,49 +1,45 @@
-"Generate a user description for [GitHub username], a [current job title] with experience in [keywords]. Include information about their expertise in [specific technologies], their passion for [specific field/industry], and their achievements and contributions in [relevant domain/field]. Highlight their dedication to continuous learning, collaborative nature, and any notable projects or experiences that showcase their skills and expertise."
+# Github Profile Readme Generator
 
-<h3 align="center">A passionate frontend developer from India</h3>
+- Developed using **NextJS**, **TailwindCSS**, **Redux Toolkit** (for state management) and **OpenAI** API.
+- The Application uses **Github authorization** to sign in users.
 
- <div className="flex flex-wrap gap-2">
-        <img
-          src="https://github-profile-trophy.vercel.app/?username=pranaygoel02"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=pranaygoel02&show_icons=true&locale=en&layout=compact"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=pranaygoel02&show_icons=true&locale=en"
-        />
-        <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=pranaygoel02&"
-        />
-      </div>
+## Description 🚀
 
-[![Github](https://github-profile-trophy.vercel.app/?username=pranaygoel02)]()
+### Why the need of such an application?
+Many young developers and begineer contributors find it difficult to make a nice Github profile readme. So they go ahead and start forking multiple readmes of different users, which is time consuming.
+This application aims to cut short this time and provide the functionality to all such users make their own profile readme at ease, in just a few steps.
+- #### Step 1:
+The user adds their tech stack and skills one by one in a field provided. These list is then used to render the skillset of the user in the final readme in the form of [Img Shield](https://shields.io) badges, of which the color can also fully customised as per preference.
+- #### Step 2:
+Here the user adds a few keywords and phrases related to their work, experience, projects and skills.
+- #### Step 3:
+This step is the USP of the application. Here the application levrages the power of OpenAIs API to generate a description of the user with the help of the keywords and the skillset provided by the user.
+- #### Step 4:
+This step is reserved for the socials, because connection is key in todays world. The users add their social links and username. It is again used to make badges for the final readme. The style of these badges is fully customizable.
+- #### Step 5:
+For any github contibutor, showcasing their stats becomes a valuable factor. So here the users can add their **Github Trophies**, **Github Overall Statistics**, **Language Stats**, and **Contribution Stats** in any order as per their choice.
+- #### Step 6:
+This is the final step, where the user can make see a final preview of their profile readme, make changes accordingly and download the `readme.md` file.
 
-[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/)
+**So in just 6 easy steps, a simple, short, yet crucial profile readme is ready for any Github contributor.**
+## Live Demo🌐
+[Live Site Link](https://dotmd.vercel.app)
 
-[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-black?style=flat&logo=stack-overflow)](https://stackoverflow.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?style=flat&logo=linkedin)](https://www.linkedin.com/)
-
-[![Behance](https://img.shields.io/badge/Behance-black?style=flat&logo=behance)](https://www.behance.net/)
-
-[![HackerRank](https://img.shields.io/badge/-HackerRank-2EC866?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/username)
-
-### Social Links
-
-[![twitter](https://img.shields.io/badge/twitter-be1e1e?style=for-the-badge&logo=twitter)](www.twitter.com/pranay_goel__)
-[![github](https://img.shields.io/badge/github-061b37?style=for-the-badge&logo=github)](https://github.com/pranaygoel02)
-
-
-## Social Links 
-[![linkedin](https://img.shields.io/badge/linkedin-1521c6?style=for-the-badge&logo=linkedin)](www.twitter.com/pranay_goel__) 
-## Tech Stack 
-[![React](https://img.shields.io/badge/React-701e76?style=for-the-badge&logo=React)](undefined)
-
-
-
-# Tech Stack
-# Social Links
-# Github Cards
-    [![Github](https://github-readme-stats.vercel.app/api?username=pranaygoel02&show_icons=true&locale=en&theme=dark)]()
-
-
+## For Developers
+- Clone the application.
+- Register a OAuth App in Github Developer Settings.
+- Add the `.env` file. A template of .env file is as follows:
+```env
+GITHUB_ID = OAuth App Client ID
+GITHUB_SECRET = OAuth App Client Secret. The secret once generated is visible only once. So make sure you keep it safely.
+NEXTAUTH_URL = http://localhost:3000 (The Github authorization fallback url. Here localhost:3000 for development environment)
+JWT_SECRET = Your JWT Secret Key
+NEXT_PUBLIC_RAPID_API_KEY = Get a OpenAI API key from [Radpid API](https://rapidapi.com/openai-api-openai-api-default/api/openai80)
+NEXT_PUBLIC_RAPID_API_HOST = openai80.p.rapidapi.com
+```
+- Install packages
+`npm i`
+- Run the app in development environment
+`npm run dev`
+- To make a build
+`npm run build`
