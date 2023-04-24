@@ -11,8 +11,11 @@ function Finalize() {
   const [finalReadme, setFinalReadme] = useState('');
 
   const {
-    githubUserProfile: { login },
+    githubUserProfile
   } = useSelector((state) => state.github);
+
+  const {login} = githubUserProfile !== undefined ? githubUserProfile : JSON.parse(localStorage.getItem('githubUserProfile'));
+
   const {
     selectedTechs,
     userDescription,
