@@ -1,38 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+"Generate a user description for [GitHub username], a [current job title] with experience in [keywords]. Include information about their expertise in [specific technologies], their passion for [specific field/industry], and their achievements and contributions in [relevant domain/field]. Highlight their dedication to continuous learning, collaborative nature, and any notable projects or experiences that showcase their skills and expertise."
 
-## Getting Started
+<h3 align="center">A passionate frontend developer from India</h3>
 
-First, run the development server:
+ <div className="flex flex-wrap gap-2">
+        <img
+          src="https://github-profile-trophy.vercel.app/?username=pranaygoel02"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=pranaygoel02&show_icons=true&locale=en&layout=compact"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=pranaygoel02&show_icons=true&locale=en"
+        />
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=pranaygoel02&"
+        />
+      </div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+[![Github](https://github-profile-trophy.vercel.app/?username=pranaygoel02)]()
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-black?style=flat&logo=stack-overflow)](https://stackoverflow.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?style=flat&logo=linkedin)](https://www.linkedin.com/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[![Behance](https://img.shields.io/badge/Behance-black?style=flat&logo=behance)](https://www.behance.net/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+[![HackerRank](https://img.shields.io/badge/-HackerRank-2EC866?style=flat-square&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/username)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Social Links
 
-## Learn More
+[![twitter](https://img.shields.io/badge/twitter-be1e1e?style=for-the-badge&logo=twitter)](www.twitter.com/pranay_goel__)
+[![github](https://img.shields.io/badge/github-061b37?style=for-the-badge&logo=github)](https://github.com/pranaygoel02)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Social Links 
+[![linkedin](https://img.shields.io/badge/linkedin-1521c6?style=for-the-badge&logo=linkedin)](www.twitter.com/pranay_goel__) 
+## Tech Stack 
+[![React](https://img.shields.io/badge/React-701e76?style=for-the-badge&logo=React)](undefined)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Tech Stack
+# Social Links
+# Github Cards
+    [![Github](https://github-readme-stats.vercel.app/api?username=pranaygoel02&show_icons=true&locale=en&theme=dark)]()
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
